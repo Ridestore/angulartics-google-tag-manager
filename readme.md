@@ -22,7 +22,7 @@ Then add `angulartics.google.tagmanager` as a dependency for your app:
 require('angulartics')
 
 angular.module('myApp', [
-  'angulartics', 
+  'angulartics',
   require('angulartics-google-tag-manager')
 ]);
 ```
@@ -45,7 +45,7 @@ Then add `angulartics.google.tagmanager` as a dependency for your app:
 
 ```javascript
 angular.module('myApp', [
-  'angulartics', 
+  'angulartics',
   'angulartics.google.tagmanager'
 ]);
 ```
@@ -79,7 +79,7 @@ _gaq.push(['_trackPageview']);
 6. Select **Rename** from the radio selector that appears beneath the Merge selector.
 7. Click Continue, then Confirm.
 8. Click the **Variables** tab in the left-side navigation.
-9. Scroll to the **User-Defined Variables** section at the bottom of the page and click the **Google Analytics Tracking ID - Angulartics** Variable. 
+9. Scroll to the **User-Defined Variables** section at the bottom of the page and click the **Google Analytics Tracking ID - Angulartics** Variable.
 10. Edit the Value field by clicking on the Variable and replace it with your companies Google Analytics Tracking ID (a.k.a. UA Number). Save your changes.
 
 #### Manual Installation
@@ -89,7 +89,9 @@ _gaq.push(['_trackPageview']);
 **6 Variables**
 
 Naming and case must match.
-
+* Name: **angulartics page title** _custom by Ridestore_
+  * Type: **Data Layer Variable**
+  * Data Layer Variable Name: **title**
 * Name: **angulartics page path**
   * Type: **Data Layer Variable**
   * Data Layer Variable Name: **content-name**
@@ -138,6 +140,7 @@ Name and case must match.
   * Value: **{{angulartics event value}}**
   * Non-Interaction Hit: **{{angulartics event interaction type}}**
   * More settings > Fields to Set > name: **page**, value: **{{angulartics page path}}**
+  * More settings > Field to Set > name: **title**, value: **{{angulartics page title}}** _custom by Ridestore_
   * More settings > Fields to Set > name: **cookieDomain**, value: **auto**
   * More settings > Fields to Set > name: **userID**, value: **{{angulartics user id}}**
   * Fire On: **Angulartics events**
@@ -148,6 +151,7 @@ Name and case must match.
   * Tracking ID: **YourGoogleAnalyticsID**
   * Track Type: **Page View**
   * More settings > Field to Set > name: **page**, value: **{{angulartics page path}}**
+  * More settings > Field to Set > name: **title**, value: **{{angulartics page title}}** _custom by Ridestore_
   * More settings > Field to Set > name: **cookieDomain**, value: **auto**
   * More settings > Fields to Set > name: **userID**, value: **{{angulartics user id}}**
   * Fire On: **Angulartics pageviews**
@@ -234,7 +238,7 @@ angular.module('myApp', ['angulartics', 'angulartics.google.tagmanager'])
     ...
   }]);
 ```
-    
+
 Alternatively, you may set your User ID by calling `$analytics.setUsername()` and providing it your userId
 
 ```javascript

@@ -1,6 +1,7 @@
 {
-  "name": "angulartics-google-tag-manager",
-  "homepage": "https://github.com/angulartics/angulartics-google-tag-manager",
+  "name": "angulartics-google-tag-manager-extended",
+  "version": "0.1.1",
+  "homepage": "https://github.com/ridestore/angulartics-google-tag-manager",
   "contributors": [
     "Jared Dickson <code@jareddickson.con>"
   ],
