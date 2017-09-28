@@ -92,6 +92,9 @@ Naming and case must match.
 * Name: **angulartics page title** _custom by Ridestore_
   * Type: **Data Layer Variable**
   * Data Layer Variable Name: **title**
+* Name: **angulartics page referrer** _custom by Ridestore_
+  * Type: **Data Layer Variable**
+  * Data Layer Variable Name: **referrer**
 * Name: **angulartics page path**
   * Type: **Data Layer Variable**
   * Data Layer Variable Name: **content-name**
@@ -153,6 +156,7 @@ Name and case must match.
   * More settings > Field to Set > name: **page**, value: **{{angulartics page path}}**
   * More settings > Field to Set > name: **title**, value: **{{angulartics page title}}** _custom by Ridestore_
   * More settings > Field to Set > name: **cookieDomain**, value: **auto**
+  * More settings > Fields to Set > name: **referrer**, value: **{{angulartics page referrer}}**  _custom by Ridestore_
   * More settings > Fields to Set > name: **userID**, value: **{{angulartics user id}}**
   * Fire On: **Angulartics pageviews**
 
